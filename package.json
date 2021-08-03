@@ -3,6 +3,7 @@
     "commitlint": "^13.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-node": "^11.1.0",
@@ -17,11 +18,12 @@
     "build-w": "npx tsc --build --diagnostics -w",
     "clean": "npx tsc --build --clean",
     "dev": "cross-env NODE_ENV=development npx ts-node ./src/index.ts",
-    "husky:test": "npx tsc --build --diagnostics && rm -r ./dist && npm run lint:husky",
+    "husky:test": "npx tsc --build && rm -r ./dist && npm run lint:husky",
     "lavalink": "java -jar ./Lavalink/Lavalink.jar",
     "lint": "npm run lint:fix && npx run prettier",
-    "lint:husky": "npm run lint:fix && npm run prettier-check",
-    "lint:fix": "npx eslint . --fix",
+    "lint:husky": "npm run lint:check && npm run prettier-check",
+    "lint:check": "npx eslint src/**/*.ts",
+    "lint:fix": "npx eslint src/**/*.ts --fix",
     "prettier": "npx prettier --config .prettierrc src/**/*.ts --write ",
     "prettier-check": "npx prettier --config .prettierrc --check src/**/*.ts",
     "prepare": "husky install",
@@ -30,5 +32,8 @@
     "watch": "nodemon -e ts -w ./src -x npm run watch:serve"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@commitlint/config-conventional": "^13.1.0"
+  }
 }
