@@ -1,3 +1,3 @@
-## TypeScript Template for my NodeJS Projects!
+# TypeScript Template for my NodeJS Projects!
 
-# Run `npm run prepare` to install Husky Github Hooks
+## Run `npm run prepare` to install Husky Github Hooks
