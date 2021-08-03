@@ -25,6 +25,7 @@
     "noImplicitOverride": true,
     "removeComments": true,
     "strictPropertyInitialization": true,
+    "types": ["node"],
     "typeRoots": []
   },
 
