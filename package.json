@@ -17,7 +17,6 @@
     "build-w": "npx tsc --build --diagnostics -w",
     "clean": "npx tsc --build --clean",
     "dev": "cross-env NODE_ENV=development npx ts-node ./src/index.ts",
-    "dashboard": "cross-env npx next ./src/Struct/Dashboard/app/ -p 1241",
     "husky:test": "npx tsc --build --diagnostics && rm -r ./dist && npm run prettier",
     "lavalink": "java -jar ./Lavalink/Lavalink.jar",
     "lint": "npm run lint:fix && npx run prettier",
@@ -25,7 +24,7 @@
     "prettier": "npx prettier --config .prettierrc src/**/*.ts --write ",
     "prepare": "husky install",
     "start": "cross-env NODE_ENV=production node ./dist/index.js",
-    "start:prod": "cross-env NODE_ENV=production pm2 start dist/index.js --name Fruitical",
+    "start:prod": "cross-env NODE_ENV=production pm2 start dist/index.js --name Template",
     "watch": "nodemon -e ts -w ./src -x npm run watch:serve"
   },
   "author": "",
