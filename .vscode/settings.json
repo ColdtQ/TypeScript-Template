@@ -1,0 +1,7 @@
+{
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "300",
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+}
