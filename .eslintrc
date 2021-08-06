@@ -18,12 +18,25 @@
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-unused-expressions": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-misused-promises": "off",
     "prettier/prettier": [
       "error",
       {
         "endOfLine": "auto"
       }
     ],
+    "import/no-cycle": "off",
+    "no-bitwise": "off",
+    "new-cap": "off",
+    "no-new": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off",
     "no-empty": "off",
     "no-else-return": "off",
     "no-plusplus": "off",
