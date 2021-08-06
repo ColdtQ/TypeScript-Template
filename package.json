@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_ENV=development npx ts-node ./src/index.ts",
     "husky:test": "npx tsc --build && rm -r ./dist && npm run lint:husky",
     "lavalink": "java -jar ./Lavalink/Lavalink.jar",
-    "lint": "npm run lint:fix && npx run prettier",
+    "lint": "npm run lint:fix && npm run prettier",
     "lint:husky": "npm run lint:check && npm run prettier-check",
     "lint:check": "npx eslint src/**/*.ts",
     "lint:fix": "npx eslint src/**/*.ts --fix",
