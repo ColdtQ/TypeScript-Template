@@ -16,7 +16,7 @@
     "start:prod": "cross-env NODE_ENV=production pm2 start dist/index.js --name Template",
     "watch": "nodemon -e ts -w ./src -x npm run watch:serve"
   },
-  "author": "Cold tQ",
+  "author": "",
   "license": "",
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -31,6 +31,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-unused-imports": "^1.1.4",
     "husky": "^7.0.1",
     "pm2": "^5.1.0",
     "prettier": "^2.3.2",
